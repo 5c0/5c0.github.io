@@ -1,1 +1,135 @@
-*{ margin: 0px;}
+body {
+  background: #000;
+  overflow: hidden;
+}
+
+audio { display:none;}
+
+.contain2 {
+  position: absolute;
+  left: 200px;
+  top: 100px;
+  z-index: -10;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  background: url(https://media.tenor.com/images/5165105214916960e6668aae0fc0e981/tenor.gif);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+
+.cl1:nth-child(1) {
+  position: absolute;
+  left: 200px;
+  top: 100px;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 2s ease-in-out;
+  background: -webkit-radial-gradient(transparent 70%, magenta);
+  transform: translateX(150px) rotateY(90deg);
+  background-size: 40px 40px;
+}
+
+.contain1:hover .cl1:nth-child(1) {
+  transform: translateX(300px) rotateY(9deg);
+}
+
+.cl1:nth-child(2) {
+  position: absolute;
+  left: 200px;
+  top: 100px;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 2s ease-in-out;
+  background: -webkit-radial-gradient(transparent 70%, silver);
+  transform: translateY(-150px) rotateX(90deg);
+  background-size: 40px 40px;
+}
+
+.contain1:hover .cl1:nth-child(2) {
+  transform: translateY(-300px) rotateX(9deg);
+}
+
+.cl1:nth-child(3) {
+  position: absolute;
+  left: 200px;
+  top: 100px;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 2s ease-in-out;
+  background: -webkit-radial-gradient(transparent 70%, orange);
+  transform: translateX(-150px) rotateY(-90deg);
+  background-size: 40px 40px;
+}
+
+.contain1:hover .cl1:nth-child(3) {
+  transform: translateX(-300px) rotateY(-9deg);
+}
+
+.cl1:nth-child(4) {
+  position: absolute;
+  left: 200px;
+  top: 100px;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 2s ease-in-out;
+  background: -webkit-radial-gradient(transparent 70%, yellow);
+  transform: translateY(150px) rotateX(-90deg);
+  background-size: 40px 40px;
+}
+
+.contain1:hover .cl1:nth-child(4) {
+  transform: translateY(300px) rotateX(-9deg);
+}
+
+.cl1:nth-child(5) {
+  position: absolute;
+  left: 200px;
+  top: 100px;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 2s ease-in-out;
+  background: -webkit-radial-gradient(transparent 70%, green);
+  transform: translateZ(-150px);
+  background-size: 40px 40px;
+}
+
+.contain1:hover .cl1:nth-child(5) {
+  transform: translateZ(-300px);
+}
+
+.cl1:nth-child(6) {
+  position: absolute;
+  left: 200px;
+  top: 100px;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 2s ease-in-out;
+  background: -webkit-radial-gradient(transparent 70%, red);
+  transform: translateZ(150px);
+  background-size: 40px 40px;
+}
+
+.contain1:hover .cl1:nth-child(6) {
+  transform: translateZ(300px);
+}
+
+.contain1 {
+  position: absolute;
+  transform-style: preserve-3d;
+  transform-origin: 400px 200px;
+  animation: mybackground 40s linear infinite;
+}
+
+@keyframes mybackground {
+  50% {
+    transform: rotateY(720deg) rotateX(-45deg) rotate(36deg);
+  }
+}
